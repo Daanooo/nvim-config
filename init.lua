@@ -16,7 +16,7 @@ vim.opt.breakindent = true
 vim.opt.signcolumn = 'yes' 
 -- Timeout stuff
 vim.opt.updatetime = 200
-vim.opt.timeoutlen = 300
+vim.opt.timeoutlen = 1000
 
 vim.opt.cursorline  = true
 vim.opt.scrolloff = 10
