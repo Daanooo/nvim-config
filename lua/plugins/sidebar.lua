@@ -1,16 +1,17 @@
 return {
     {
-        'sidebar-nvim/sidebar.nvim',
-        
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons",
+          "MunifTanjim/nui.nvim",
+        },
         config = function()
-            require('sidebar-nvim').setup({
-                open = true,
-                sections = { 'buffers', 'files', 'git', },
-                section_separator = { '', string.rep('─', vim.o.columns - 10), '', },
-                buffers = {
-                    icon = '' 
-                },
+            require('neo-tree').setup({
+                close_if_last_window = true,
+                use_libuv_file_watcher = true,
             })
-        end
+        end,
     },
 }
