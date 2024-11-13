@@ -22,6 +22,14 @@ vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = 'Telescope buffers
 vim.keymap.set('n', '<leader>fh', telescope.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>fc', telescope.commands, { desc = 'Telescope available commands' })
 vim.keymap.set('n', '<leader>fkb', telescope.keymaps, { desc = 'Telescope show keymaps' })
+
+
+--[[
+Git keybinds
+Some of these include telescope functionality
+
+Prefix: g
+--]]
 vim.keymap.set('n', '<leader>gst', telescope.git_status, { desc = 'Telescope git status' })
 
 
